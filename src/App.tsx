@@ -11,7 +11,7 @@ class App extends React.Component {
     }
     dates.push(1);
 
-    const divs = dates.map(date => (<div>{date}</div>));
+    const divs = dates.map(date => (<div className="Calendar-day">{date}</div>));
 
     return (
       <div className="App">
@@ -23,7 +23,14 @@ class App extends React.Component {
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
         <div className="Calendar">
-          {divs}
+        <div className="Calendar-day">Mon</div>
+        <div className="Calendar-day">Tue</div>
+        <div className="Calendar-day">Wed</div>
+        <div className="Calendar-day">Thu</div>
+        <div className="Calendar-day">Fri</div>
+        <div className="Calendar-day">Sat</div>
+        <div className="Calendar-day">Sun</div>
+        {divs}
         </div>
       </div>
     );

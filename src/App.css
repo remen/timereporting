@@ -32,10 +32,17 @@
   background-color: #bbb;
   padding: 1px;
   grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 25px;
+  margin: 5px;
 }
 
 .Calendar > div {
   background-color: #fff;
+}
+
+.Calendar-day {
+  text-align: left;
+  padding: 5px;
 }
 
 @keyframes App-logo-spin {
